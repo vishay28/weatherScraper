@@ -43,4 +43,4 @@ jobs:
         pip install build
         python -m build
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag weatherScraper:$(date +%s)
+      run: docker build . --file Dockerfile --tag weather-scraper:$(date +%s)
