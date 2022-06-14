@@ -3,9 +3,11 @@
 
 name: Python package
 
-on: [workflow_dispatch]
-  # push:
-  #   branches: [ "master" ]
+on:
+  push:
+    branches: [ "master" ]
+    
+  workflow_dispatch:
 
 jobs:
   build:
